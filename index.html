@@ -46,6 +46,24 @@
                 <a href="#skills" class="hover:text-blue-400 transition">Skills</a>
                 <a href="#contact" class="hover:text-blue-400 transition">Contact</a>
             </div>
+            <!-- Mobile Button -->
+            <button id="menu-btn" class="md:hidden text-gray-300 focus:outline-none">
+                <i class="fas fa-bars text-xl"></i>
+            </button>     
+            <!-- Mobile Dropdown Menu -->
+            <div id="mobile-menu" 
+            class="md:hidden fixed top-20 left-1/2 -translate-x-1/2 w-[90%] 
+            bg-gray-900 border border-gray-800 rounded-2xl shadow-2xl 
+            overflow-hidden transform scale-95 opacity-0 pointer-events-none 
+            transition-all duration-300 z-40">
+
+                <div class="flex flex-col text-center divide-y divide-gray-800">
+                    <a href="#about" class="py-4 text-gray-300 hover:bg-gray-800 hover:text-blue-400 transition">About</a>
+                    <a href="#skills" class="py-4 text-gray-300 hover:bg-gray-800 hover:text-blue-400 transition">Skills</a>
+                    <a href="#contact" class="py-4 text-gray-300 hover:bg-gray-800 hover:text-blue-400 transition">Contact</a>
+                </div>
+
+            </div>                   
         </div>
     </nav>
     <!-- Header -->
@@ -73,10 +91,10 @@
 
                 <div class="flex gap-4">
                     <a href="#contact" class="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 rounded-full font-semibold transition shadow-lg shadow-blue-900/20">
-                        Contact Me
+                        Contact
                     </a>
                     <a href="https://github.com/buildbycodes" target="_blank" class="border border-gray-700 hover:bg-gray-800 px-8 py-3 rounded-full font-semibold transition">
-                        GitHub Profile
+                        GitHub
                     </a>
                 </div>
                 
@@ -182,6 +200,12 @@
                     <i class="fab fa-linkedin text-[#0077B5] group-hover:scale-110 transition"></i> 
                     <span>LinkedIn</span>
                 </a>
+
+                <a href="https://github.com/buildbycodes" target="_blank" 
+                class="flex items-center gap-3 bg-slate-900 px-6 py-4 rounded-xl border border-slate-800 hover:border-[#0077B5] hover:shadow-[0_0_15px_rgba(0,119,181,0.2)] hover:-translate-y-1 transition-all duration-300 group">
+                    <i class="fab fa-github text-[#0077B5] group-hover:scale-110 transition"></i> 
+                    <span>Github</span>
+                </a>                
             </div>
         </div>
     </section>
@@ -194,6 +218,7 @@
             Designed for performance & scalability.
         </p>
     </footer>
-
+    <!-- Scripts -->
+    <script src="assets/js/script.js"></script>
 </body>
 </html>
